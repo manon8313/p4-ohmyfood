@@ -1,197 +1,40 @@
 /* Version Mobile First */
-body{
-    padding: 0px;
+/* Container styling */
+.container {
+    width: 100%;
 }
 
-/* Block: header */
-
+/* Header styling */
 .header {
-    padding: 20px;
-
+    padding:0px;
 }
 
-/* Element: header__logo-link */
+/* Logo link styling */
 .header__logo-link {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-/* Element: header__logo */
-.header__logo {
-    display: flex;
-    padding: 14px 89px 13px 89px;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 33px;
-}
-
-/* Element: header__localisation */
-.header__localisation {
+/* Block styling for location */
+.location {
     display: flex;
     align-items: center;
 }
 
-/* Element: header__localisation-icon */
-.header__localisation-icon {
+/* Element styling for icon */
+.location__icon {
     margin-right: 8px;
     font-size: 20px;
 }
 
-/* Element: header__localisation-text */
-.header__localisation-text {
+/* Element styling for text */
+.location__text {
     margin: 0;
-    font-size: 16px;
+    font-size: 32px;
 }
 
-/* Block: reservation */
-.reservation {
-    padding: 20px;
-    text-align: center;
-}
 
-.reservation__title {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.reservation__subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.reservation__input {
-    padding: 10px;
-    font-size: 14px;
-    width: 80%;
-    margin-bottom: 20px;
-}
-
-.reservation__fonctionnement {
-    text-align: left;
-}
-
-.reservation__fonctionnement-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.reservation__filter {
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.reservation__steps {
-    list-style-type: none;
-    padding: 0;
-}
-
-.reservation__step {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    background-color: #f6f6f6;
-    border-radius: 20px;
-    height: 72px;
-    width: 322px;
-}
-
-.reservation__step i {
-    margin-right: 30px;
-    margin-left: 60px;
-}
-
-/* Block: restaurants */
-.restaurants {
-    padding: 20px;
-    background-color: #f6f6f6;
-    width: max-content;
-}
-
-.restaurants__title {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.restaurants__choice {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.restaurants__item {
-    border-radius: 30px;
-    overflow: hidden;
-    width: 132%;
-}
-
-.restaurants__link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.restaurants__image {
-    width: 364px;
-    height: 231px;
-    display: block;
-}
-
-.restaurants__details {
-    padding: 10px;
-    background-color: #ffffff;
-    border: 4px solid white;
-}
-
-.restaurants__name {
-    font-size: 18px;
-    margin: 0 0 5px;
-}
-
-.restaurants__location {
-    font-size: 14px;
-    color: #757575;
-    margin: 0 0 10px;
-}
-
-.restaurants__heart {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* Block: footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__logo {
-    max-height: 40px;
-    margin-bottom: 20px;
-}
-
-.footer__list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer__list-item {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.footer__list-item i {
-    margin-right: 10px;
-}
 
 
 

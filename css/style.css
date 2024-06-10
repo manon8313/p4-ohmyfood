@@ -1,43 +1,35 @@
 /* Version Mobile First */
-body {
-  padding: 0px;
+/* Container styling */
+.container {
+  width: 100%;
 }
 
-/* Block: header */
+/* Header styling */
 .header {
-  padding: 20px;
+  padding:0px;
 }
 
-/* Element: header__logo-link */
+/* Logo link styling */
 .header__logo-link {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-/* Element: header__logo */
-.header__logo {
-  display: flex;
-  padding: 14px 89px 13px 89px;
-  justify-content: center;
-  align-items: center;
-  width: 195px;
-  height: 33px;
-}
-
-/* Element: header__localisation */
-.header__localisation {
+/* Block styling for location */
+.location {
   display: flex;
   align-items: center;
 }
 
-/* Element: header__localisation-icon */
-.header__localisation-icon {
+/* Element styling for icon */
+.location__icon {
   margin-right: 8px;
   font-size: 20px;
 }
 
-/* Element: header__localisation-text */
-.header__localisation-text {
+/* Element styling for text */
+.location__text {
   margin: 0;
   font-size: 16px;
 }
@@ -63,6 +55,7 @@ body {
   font-size: 14px;
   width: 80%;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .reservation__fonctionnement {
@@ -91,7 +84,9 @@ body {
   background-color: #f6f6f6;
   border-radius: 20px;
   height: 72px;
-  width: 322px;
+  width: 100%; 
+  max-width: 320px; 
+  margin: 0 auto; 
 }
 
 .reservation__step i {
@@ -103,7 +98,6 @@ body {
 .restaurants {
   padding: 20px;
   background-color: #f6f6f6;
-  width: max-content;
 }
 
 .restaurants__title {
@@ -119,20 +113,27 @@ body {
 }
 
 .restaurants__item {
+  position: relative;
   border-radius: 30px;
   overflow: hidden;
-  width: 132%;
 }
 
 .restaurants__link {
   text-decoration: none;
+  position: relative;
   color: inherit;
 }
 
+.restaurants__badge {
+  position: absolute;
+  background-color: rgba(0, 255, 0, 0.7);
+  color: white;
+  font-size: 25px;
+}
+
 .restaurants__image {
-  width: 364px;
-  height: 231px;
-  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .restaurants__details {
@@ -155,6 +156,7 @@ body {
 .restaurants__heart {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
 }
 
 /* Block: footer */
@@ -190,5 +192,20 @@ body {
 .footer__list-item i {
   margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
