@@ -1,198 +1,256 @@
 /* Version Mobile First */
+
 body{
-    padding: 0px;
-}
-
-/* Block: header */
-
-.header {
-    padding: 20px;
-
-}
-
-/* Element: header__logo-link */
-.header__logo-link {
+    margin:0px;
+    padding:0px;
+  }
+  
+  /* Container styling */
+  .container {
+    width: 100%;
+  }
+  
+  /* Header styling */
+  .header {
+    padding:0px;
+  }
+  
+  /* Logo link styling */
+  .header__logo-link {
     display: flex;
     align-items: center;
-}
-
-/* Element: header__logo */
-.header__logo {
-    display: flex;
+    justify-content: space-around;
     padding: 14px 89px 13px 89px;
+  }
+  
+  /* Block styling for location */
+  .location {
+    display: flex;
+    background: #EAEAEA;
+    height: 130px;
     justify-content: center;
     align-items: center;
-    width: 195px;
-    height: 33px;
-}
-
-/* Element: header__localisation */
-.header__localisation {
-    display: flex;
-    align-items: center;
-}
-
-/* Element: header__localisation-icon */
-.header__localisation-icon {
+    gap: 17px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Element styling for icon */
+  .location__icon {
     margin-right: 8px;
     font-size: 20px;
-}
-
-/* Element: header__localisation-text */
-.header__localisation-text {
+  }
+  
+  /* Element styling for text */
+  .location__text {
     margin: 0;
-    font-size: 16px;
-}
-
-/* Block: reservation */
-.reservation {
-    padding: 20px;
+    font-size: 44px;
+  }
+  
+  /* Block: reservation */
+  .reservation {
     text-align: center;
-}
-
-.reservation__title {
-    font-size: 24px;
+    background: #f6f6f6;
+  }
+  
+  .reservation__title {
+    font-size: 84px;
     margin-bottom: 10px;
-}
-
-.reservation__subtitle {
+  }
+  
+  .reservation__subtitle {
     font-size: 16px;
     margin-bottom: 20px;
-}
-
-.reservation__input {
+    font-family: 'roboto';
+  }
+  
+  .reservation__input {
     padding: 10px;
     font-size: 14px;
-    width: 80%;
+    width: 218px;
+    height: 50px;
     margin-bottom: 20px;
-}
-
-.reservation__fonctionnement {
+    max-width: 100%;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 82px;
+    margin-right: 75px;
+    border: none;
+  }
+  
+  .reservation__input::placeholder {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 18px 13px 18px 13px;
+    width: 180px;
+    height: 24px;
+  }
+  
+  
+  .reservation__fonctionnement {
     text-align: left;
-}
-
-.reservation__fonctionnement-title {
-    font-size: 20px;
+    background: white;
+  }
+  
+  .reservation__fonctionnement-title {
     margin-bottom: 10px;
-}
-
-.reservation__filter {
+    font-family: Roboto;
+    font-size: 24px;
+  }
+  
+  .reservation__filter {
     padding: 10px;
     border-radius: 8px;
-}
-
-.reservation__steps {
+  }
+  
+  .reservation__steps {
     list-style-type: none;
     padding: 0;
-}
-
-.reservation__step {
-    margin-bottom: 10px;
+    margin: 0px;
+  }
+  
+  .reservation__step {
     display: flex;
     align-items: center;
-    background-color: #f6f6f6;
     border-radius: 20px;
     height: 72px;
-    width: 322px;
-}
-
-.reservation__step i {
+    max-width: 320px;
+    margin: 0 auto;
+    background: var(--Background, #F6F6F6);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+  }
+  
+  
+  .reservation__step-icon {
     margin-right: 30px;
     margin-left: 60px;
-}
+    color:#7E7E7E;
+  }
 
-/* Block: restaurants */
-.restaurants {
+  .reservation__step-icon--special{
+    color:#9356DC;
+  }
+
+  .reservation__step-text{
+    font-size: 16px;
+  }
+  
+  /* Block: restaurants */
+  .restaurants {
     padding: 20px;
     background-color: #f6f6f6;
-    width: max-content;
-}
-
-.restaurants__title {
+  }
+  
+  .restaurants__title {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.restaurants__choice {
+  }
+  
+  .restaurants__choice {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.restaurants__item {
+  }
+  
+  .restaurants__item {
+    position: relative;
     border-radius: 30px;
     overflow: hidden;
-    width: 132%;
-}
-
-.restaurants__link {
+  }
+  
+  .restaurants__link {
     text-decoration: none;
+    position: relative;
     color: inherit;
-}
-
-.restaurants__image {
-    width: 364px;
-    height: 231px;
-    display: block;
-}
-
-.restaurants__details {
+  }
+  
+  .restaurants__badge {
+    position: absolute;
+    background-color:#99E2D0;
+    color:#008766;
+    font-size: 25px;
+    padding: 7px 9px 6px 9px;
+    right: 12px;
+    height: 29px;
+    margin: 70px 15px 132px 251px;
+  }
+  
+  .restaurants__image {
+    max-width: 100%;
+    transform-origin: center;
+  }
+  
+  .restaurants__details {
     padding: 10px;
     background-color: #ffffff;
     border: 4px solid white;
-}
-
-.restaurants__name {
-    font-size: 18px;
+  }
+  
+  .restaurants__name {
     margin: 0 0 5px;
-}
-
-.restaurants__location {
-    font-size: 14px;
+    font-family: Roboto;
+    font-size: 18px;
+    height: 20px;
+  }
+  
+  .restaurants__location {
+    font-size: 17px;
     color: #757575;
     margin: 0 0 10px;
-}
-
-.restaurants__heart {
+    padding: 0px;
+  }
+  
+  .restaurants__heart {
     display: flex;
     justify-content: flex-end;
-}
-
-/* Block: footer */
-.footer {
-    background-color: #333;
+    position: absolute;
+  }
+  
+  /* Block: footer */
+  .footer {
+    background-color: #353535;
     color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer__content {
+    padding: 22px 25px;
+  }
+  
+  .footer__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.footer__logo {
-    max-height: 40px;
-    margin-bottom: 20px;
-}
-
-.footer__list {
+    align-items: flex-start;
+    gap:7px
+  }
+  
+  .footer__title {
+    margin: 0px;
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .footer__list {
     list-style-type: none;
     padding: 0;
-}
-
-.footer__list-item {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 16px;
+  }
+  
+  .footer__list-item {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-}
-
-.footer__list-item i {
+  }
+  
+  .footer__list-item i {
     margin-right: 10px;
-}
-
+  }
 
 
 

@@ -1,4 +1,9 @@
 /* Version Mobile First */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* Container styling */
 .container {
   width: 100%;
@@ -6,7 +11,7 @@
 
 /* Header styling */
 .header {
-  padding:0px;
+  padding: 0px;
 }
 
 /* Logo link styling */
@@ -14,12 +19,18 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 14px 89px 13px 89px;
 }
 
 /* Block styling for location */
 .location {
   display: flex;
+  background: #EAEAEA;
+  height: 130px;
+  justify-content: center;
   align-items: center;
+  gap: 17px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Element styling for icon */
@@ -31,40 +42,60 @@
 /* Element styling for text */
 .location__text {
   margin: 0;
-  font-size: 16px;
+  font-size: 44px;
 }
 
 /* Block: reservation */
 .reservation {
-  padding: 20px;
   text-align: center;
+  background: #f6f6f6;
 }
 
 .reservation__title {
-  font-size: 24px;
+  font-size: 84px;
   margin-bottom: 10px;
 }
 
 .reservation__subtitle {
   font-size: 16px;
   margin-bottom: 20px;
+  font-family: "roboto";
 }
 
 .reservation__input {
   padding: 10px;
   font-size: 14px;
-  width: 80%;
+  width: 218px;
+  height: 50px;
   margin-bottom: 20px;
   max-width: 100%;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 82px;
+  margin-right: 75px;
+  border: none;
+}
+
+.reservation__input::placeholder {
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  padding: 18px 13px 18px 13px;
+  width: 180px;
+  height: 24px;
 }
 
 .reservation__fonctionnement {
   text-align: left;
+  background: white;
 }
 
 .reservation__fonctionnement-title {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 24px;
 }
 
 .reservation__filter {
@@ -75,23 +106,33 @@
 .reservation__steps {
   list-style-type: none;
   padding: 0;
+  margin: 0px;
 }
 
 .reservation__step {
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  background-color: #f6f6f6;
   border-radius: 20px;
   height: 72px;
-  width: 100%; 
-  max-width: 320px; 
-  margin: 0 auto; 
+  max-width: 320px;
+  margin: 0 auto;
+  background: var(--Background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
 }
 
-.reservation__step i {
+.reservation__step-icon {
   margin-right: 30px;
   margin-left: 60px;
+  color: #7E7E7E;
+}
+
+.reservation__step-icon--special {
+  color: #9356DC;
+}
+
+.reservation__step-text {
+  font-size: 16px;
 }
 
 /* Block: restaurants */
@@ -126,14 +167,18 @@
 
 .restaurants__badge {
   position: absolute;
-  background-color: rgba(0, 255, 0, 0.7);
-  color: white;
+  background-color: #99E2D0;
+  color: #008766;
   font-size: 25px;
+  padding: 7px 9px 6px 9px;
+  right: 12px;
+  height: 29px;
+  margin: 70px 15px 132px 251px;
 }
 
 .restaurants__image {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  transform-origin: center;
 }
 
 .restaurants__details {
@@ -143,14 +188,17 @@
 }
 
 .restaurants__name {
-  font-size: 18px;
   margin: 0 0 5px;
+  font-family: Roboto;
+  font-size: 18px;
+  height: 20px;
 }
 
 .restaurants__location {
-  font-size: 14px;
+  font-size: 17px;
   color: #757575;
   margin: 0 0 10px;
+  padding: 0px;
 }
 
 .restaurants__heart {
@@ -161,26 +209,34 @@
 
 /* Block: footer */
 .footer {
-  background-color: #333;
+  background-color: #353535;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 22px 25px;
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  gap: 7px;
 }
 
-.footer__logo {
-  max-height: 40px;
-  margin-bottom: 20px;
+.footer__title {
+  margin: 0px;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__list {
   list-style-type: none;
   padding: 0;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 16px;
 }
 
 .footer__list-item {
@@ -192,20 +248,5 @@
 .footer__list-item i {
   margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
