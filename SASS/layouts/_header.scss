@@ -1,14 +1,19 @@
- /* Header styling */
- .header {
-    padding:0px;
+// Variables
 
-    a{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 14px 89px 13px 89px; 
-    }
-  }
+$header-padding: 0px;
+$header-link-padding: 14px 89px 13px 89px;
+
+/* Header styling */
+ .header {
+     padding: $header-padding;
+ 
+     a {
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         padding: $header-link-padding;
+     }
+ }
   
   /* Logo link styling */
 //   .header__logo-link {

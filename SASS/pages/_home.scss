@@ -1,44 +1,56 @@
-  /* Block styling for location */
-  .location {
-    display: flex;
-    background: #EAEAEA;
-    height: 130px;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  /* Element styling for icon */
-  .location__icon {
+/* Variables */
+$bg-color-light: #EAEAEA;
+$bg-color-lighter: #F6F6F6;
+$text-color: #000;
+$text-color-light: #757575;
+$text-color-icon: #7E7E7E;
+$text-color-icon-special: #9356DC;
+$text-color-badge: #008766;
+$bg-color-badge: #99E2D0;
+$shadow-1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-2: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow-3: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+$font-family-primary: 'Roboto';
+$font-family-title: 'Shrikhand';
+
+/* Block styling for location */
+.location {
+  display: flex;
+  background: $bg-color-light;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  box-shadow: $shadow-1;
+
+  &__icon {
     margin-right: 8px;
     font-size: 20px;
   }
-  
-  /* Element styling for text */
-  .location__text {
+
+  &__text {
     margin: 0;
     font-size: 44px;
   }
-  
-  /* Block: reservation */
-  .reservation {
-    text-align: center;
-    background: #f6f6f6;
-  }
-  
-  .reservation__title {
+}
+
+/* Block: reservation */
+.reservation {
+  text-align: center;
+  background: $bg-color-lighter;
+
+  &__title {
     font-size: 84px;
     margin-bottom: 10px;
   }
-  
-  .reservation__subtitle {
+
+  &__subtitle {
     font-size: 16px;
     margin-bottom: 20px;
-    font-family: 'roboto';
+    font-family: $font-family-primary;
   }
-  
-  .reservation__input {
+
+  &__input {
     padding: 10px;
     font-size: 14px;
     width: 218px;
@@ -47,148 +59,147 @@
     max-width: 100%;
     border-radius: 25px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow-2;
     margin-left: 82px;
     margin-right: 75px;
     border: none;
+
+    &::placeholder {
+      color: white;
+      text-align: center;
+      font-family: $font-family-primary;
+      font-size: 16px;
+      padding: 18px 13px;
+      width: 180px;
+      height: 24px;
+    }
   }
-  
-  .reservation__input::placeholder {
-    color: white;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    padding: 18px 13px 18px 13px;
-    width: 180px;
-    height: 24px;
-  }
-  
-  
-  .reservation__fonctionnement {
+
+  &__fonctionnement {
     text-align: left;
     background: white;
+
+    &-title {
+      margin-bottom: 10px;
+      font-family: $font-family-primary;
+      font-size: 24px;
+      padding: 48px 80px 0 20px;
+    }
   }
-  
-  .reservation__fonctionnement-title {
-    margin-bottom: 10px;
-    font-family: Roboto;
-    font-size: 24px;
-    padding: 48px 80px 0px 20px;
-  }
-  
-  .reservation__filter {
+
+  &__filter {
     padding: 10px;
     border-radius: 8px;
   }
-  
-  .reservation__steps {
+
+  &__steps {
     list-style-type: none;
     padding: 0;
-    margin: 0px;
-  }
-  
-  .reservation__step {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    height: 72px;
-    max-width: 320px;
-    margin: 0 auto;
-    background: var(--Background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 25px;
-  }
-  
-  
-  .reservation__step-icon {
-    margin-right: 30px;
-    margin-left: 60px;
-    color:#7E7E7E;
-  }
+    margin: 0;
 
-  .reservation__step-icon--special{
-    color:#9356DC;
-  }
+    &__step {
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      height: 72px;
+      max-width: 320px;
+      margin: 0 auto;
+      background: var(--Background, #F6F6F6);
+      box-shadow: $shadow-3;
+      margin-bottom: 25px;
 
-  .reservation__step-text{
-    font-size: 16px;
-    color: #000;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 211px;
-    height: 15.67px;
+      &-icon {
+        margin-right: 30px;
+        margin-left: 60px;
+        color: $text-color-icon;
+
+        &--special {
+          color: $text-color-icon-special;
+        }
+      }
+
+      &-text {
+        font-size: 16px;
+        color: $text-color;
+        font-family: $font-family-primary;
+        font-weight: 500;
+        line-height: normal;
+        width: 211px;
+        height: 15.67px;
+      }
+    }
   }
-  
-  /* Block: restaurants */
-  .restaurants {
-    padding: 17px;
-    background-color: #f6f6f6;
-  }
-  
-  .restaurants__title {
+}
+
+/* Block: restaurants */
+.restaurants {
+  padding: 17px;
+  background-color: $bg-color-lighter;
+
+  &__title {
     font-size: 24px;
     text-align: left;
     margin-bottom: 20px;
   }
-  
-  .restaurants__choice {
+
+  &__choice {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  
-  .restaurants__item {
+
+  &__item {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
   }
-  
-  .restaurants__link {
+
+  &__link {
     text-decoration: none;
     position: relative;
     color: inherit;
   }
-  
-  .restaurants__badge {
+
+  &__badge {
     position: absolute;
-    background-color:#99E2D0;
-    color:#008766;
+    background-color: $bg-color-badge;
+    color: $text-color-badge;
     font-size: 25px;
-    padding: 7px 9px 6px 9px;
-    right: 12px;
-    height: 29px;
-    margin: 70px 15px 132px 251px;
+    padding: 7px 9px;
+    right: 18px;
+    margin-top: 26px;
   }
-  
-  .restaurants__image {
+
+  &__image {
     max-width: 100%;
     transform-origin: center;
   }
-  
-  .restaurants__details {
+
+  &__details {
     padding: 10px;
     background-color: #ffffff;
     border: 4px solid white;
   }
-  
-  .restaurants__name {
+
+  &__name {
     margin: 0 0 5px;
-    font-family: Roboto;
+    font-family: $font-family-primary;
     font-size: 18px;
     height: 20px;
   }
-  
-  .restaurants__location {
+
+  &__location {
     font-size: 17px;
-    color: #757575;
+    color: $text-color-light;
     margin: 0 0 10px;
     padding: 0px;
   }
-  
-  .restaurants__heart {
+
+  &__heart {
     display: flex;
     justify-content: flex-end;
     position: absolute;
+    right: 0;
+    bottom: 0;
   }
+}

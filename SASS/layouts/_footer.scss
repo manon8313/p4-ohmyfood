@@ -1,0 +1,57 @@
+ // Variables
+    $footer-bg-color: #353535;
+    $footer-text-color: #fff;
+    $footer-padding: 22px 25px;
+    $footer-title-font-family: 'Shrikhand';
+    $footer-title-font-size: 18px;
+    $footer-title-font-weight: 400;
+    $footer-list-font-size: 16px;
+    $footer-gap: 7px;
+    $footer-list-item-margin-bottom: 10px;
+    $footer-list-item-icon-margin-right: 10px;
+ 
+ 
+ 
+ /* Block: footer */
+
+
+  .footer {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    padding: $footer-padding;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $footer-gap;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $footer-title-font-family;
+        font-size: $footer-title-font-size;
+        font-weight: $footer-title-font-weight;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $footer-gap;
+        font-size: $footer-list-font-size;
+    }
+
+    &__list-item {
+        margin-bottom: $footer-list-item-margin-bottom;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: $footer-list-item-icon-margin-right;
+        }
+    }
+}
