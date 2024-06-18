@@ -4,16 +4,20 @@ $header-padding: 0px;
 $header-link-padding: 14px 89px 13px 89px;
 
 /* Header styling */
- .header {
-     padding: $header-padding;
- 
-     a {
-         display: flex;
-         align-items: center;
-         justify-content: space-around;
-         padding: $header-link-padding;
-     }
- }
+.header {
+    padding: $header-padding;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: $header-link-padding;
+
+        .header__logo {
+            // styles spécifiques pour le logo
+        }
+    }
+}
   
   /* Logo link styling */
 //   .header__logo-link {

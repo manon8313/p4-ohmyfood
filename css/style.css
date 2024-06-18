@@ -315,13 +315,12 @@ template {
 .header {
   padding: 0px;
 }
-.header a {
+.header__link {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 14px 89px 13px 89px;
 }
-
 /* Logo link styling */
 /* Variables */
 /* Block styling for location */
@@ -353,7 +352,7 @@ template {
   margin-bottom: 10px;
 }
 .reservation__subtitle {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
   font-family: "Roboto";
 }
@@ -487,8 +486,8 @@ template {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 30px;
+  bottom: 30px;
 }
 
 /* Block: footer */
