@@ -129,6 +129,21 @@ $font-family-title: 'Shrikhand';
         width: 211px;
         height: 15.67px;
       }
+        .step-number{
+          color:$bg-color-light;
+          font-size: 14px;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          border: 1px solid;
+          align-items: center;
+          position: absolute;
+          background:$text-color-icon-special;
+          justify-content: center;
+          font-family: roboto;
+          left: 33%;
+        }
     }
   }
 }

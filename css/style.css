@@ -429,6 +429,21 @@ template {
   width: 211px;
   height: 15.67px;
 }
+.reservation__steps__step .step-number {
+  color: #EAEAEA;
+  font-size: 14px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  border: 1px solid;
+  align-items: center;
+  position: absolute;
+  background: #9356DC;
+  justify-content: center;
+  font-family: roboto;
+  left: 33%;
+}
 
 /* Block: restaurants */
 .restaurants {
