@@ -321,6 +321,7 @@ template {
   justify-content: space-around;
   padding: 14px 89px 13px 89px;
 }
+
 /* Logo link styling */
 /* Variables */
 /* Block styling for location */
@@ -416,6 +417,8 @@ template {
 }
 .reservation__steps__step-icon--special {
   color: #9356DC;
+  margin-right: 30px;
+  margin-left: 60px;
 }
 .reservation__steps__step-text {
   font-size: 16px;
@@ -488,6 +491,9 @@ template {
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+.restaurants__heart .fa-solid {
+  color: #9356DC;
 }
 
 /* Block: footer */
