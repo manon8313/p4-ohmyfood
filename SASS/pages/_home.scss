@@ -45,33 +45,28 @@ $font-family-title: 'Shrikhand';
   }
 
   &__subtitle {
-    font-size: 18px;
+    font-size: 45px;
     margin-bottom: 20px;
     font-family: $font-family-primary;
   }
 
   &__input {
-    padding: 10px;
-    font-size: 14px;
-    width: 218px;
-    height: 50px;
+    width: 56%;
+    height: 116px;
     margin-bottom: 20px;
-    max-width: 100%;
-    border-radius: 25px;
+    border-radius: 100px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
     box-shadow: $shadow-2;
     margin-left: 82px;
     margin-right: 75px;
     border: none;
+    padding-top: 12px;
 
     &::placeholder {
       color: white;
       text-align: center;
       font-family: $font-family-primary;
-      font-size: 16px;
-      padding: 18px 13px;
-      width: 180px;
-      height: 24px;
+      font-size: 40px;
     }
   }
 
@@ -82,8 +77,8 @@ $font-family-title: 'Shrikhand';
     &-title {
       margin-bottom: 10px;
       font-family: $font-family-primary;
-      font-size: 24px;
-      padding: 48px 80px 0 20px;
+      font-size: 60px;
+      padding:48px 80px 0 54px;
     }
   }
 
@@ -100,9 +95,9 @@ $font-family-title: 'Shrikhand';
     &__step {
       display: flex;
       align-items: center;
-      border-radius: 20px;
-      height: 72px;
-      max-width: 320px;
+      border-radius:40px;
+      height:128px;
+      width:84%;
       margin: 0 auto;
       background: var(--Background, #F6F6F6);
       box-shadow: $shadow-3;
@@ -110,31 +105,32 @@ $font-family-title: 'Shrikhand';
 
       &-icon {
         margin-right: 30px;
-        margin-left: 60px;
+        margin-left: 99px;
         color: $text-color-icon;
+        font-size:35px;
 
         &--special {
           color: $text-color-icon-special;
           margin-right: 30px;
-          margin-left: 60px;
+          margin-left:99px;
+          font-size: 35px;
         }
       }
 
       &-text {
-        font-size: 16px;
+        font-size: 40px;
         color: $text-color;
         font-family: $font-family-primary;
         font-weight: 500;
         line-height: normal;
-        width: 211px;
-        height: 15.67px;
+        padding-left:40px;
       }
         .step-number{
           color:$bg-color-light;
-          font-size: 14px;
+          font-size: 30px;
           border-radius: 50%;
-          width: 24px;
-          height: 24px;
+          width: 50px;
+          height: 50px;
           display: flex;
           border: 1px solid;
           align-items: center;
@@ -142,7 +138,7 @@ $font-family-title: 'Shrikhand';
           background:$text-color-icon-special;
           justify-content: center;
           font-family: roboto;
-          left: 33%;
+          left:6%;
         }
     }
   }
@@ -154,9 +150,10 @@ $font-family-title: 'Shrikhand';
   background-color: $bg-color-lighter;
 
   &__title {
-    font-size: 24px;
+    font-size: 66px;
     text-align: left;
     margin-bottom: 20px;
+    margin-left:28px;
   }
 
   &__choice {
@@ -189,24 +186,24 @@ $font-family-title: 'Shrikhand';
 
   &__image {
     max-width: 100%;
-    transform-origin: center;
   }
 
   &__details {
     padding: 10px;
     background-color: #ffffff;
     border: 4px solid white;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 40px 40px
   }
 
   &__name {
     margin: 0 0 5px;
     font-family: $font-family-primary;
-    font-size: 18px;
-    height: 20px;
+    font-size:46px;
   }
 
   &__location {
-    font-size: 17px;
+    font-size:48px;
     color: $text-color-light;
     margin: 0 0 10px;
     padding: 0px;
@@ -216,8 +213,9 @@ $font-family-title: 'Shrikhand';
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right:80px;
+    bottom:50px;
+    font-size:60px;
 
       .fa-solid{
         color:$text-color-icon-special;

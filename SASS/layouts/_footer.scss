@@ -1,11 +1,11 @@
  // Variables
     $footer-bg-color: #353535;
     $footer-text-color: #fff;
-    $footer-padding: 22px 25px;
+    $footer-padding:25px 25px 25px 25px;
     $footer-title-font-family: 'Shrikhand';
-    $footer-title-font-size: 18px;
+    $footer-title-font-size:50px;
     $footer-title-font-weight: 400;
-    $footer-list-font-size: 16px;
+    $footer-list-font-size:44px;
     $footer-gap: 7px;
     $footer-list-item-margin-bottom: 10px;
     $footer-list-item-icon-margin-right: 10px;
@@ -31,6 +31,7 @@
         font-family: $footer-title-font-family;
         font-size: $footer-title-font-size;
         font-weight: $footer-title-font-weight;
+        padding-bottom: 30px;
     }
 
     &__list {
