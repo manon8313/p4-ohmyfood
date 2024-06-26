@@ -12,6 +12,7 @@ $shadow-2: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $shadow-3: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 $font-family-primary: 'Roboto';
 $font-family-title: 'Shrikhand';
+$Button-Gradient: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 
 /* Block styling for location */
 .location {
@@ -40,6 +41,7 @@ $font-family-title: 'Shrikhand';
 .reservation {
   text-align: center;
   background: $bg-color-lighter;
+  padding: 100px;
 
   &__title {
     font-size: 84px;
@@ -49,10 +51,31 @@ $font-family-title: 'Shrikhand';
 
   &__subtitle {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom:84px;
     font-family: $font-family-primary;
   }
- 
+  
+  a {
+    display: inline-block;
+    padding:32px 20px;
+    background:$Button-Gradient;
+    color:#FFF;
+    text-decoration: none;
+    font-size:45px;
+    border-radius:80px;
+    width: 612px;
+    height: 118px;
+    font-family: Roboto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 57px;
+
+    &:hover {
+    transform: scale(1.1);
+    }
+  }
 }
 
 /* block: fonctionnement */
@@ -63,10 +86,11 @@ $font-family-title: 'Shrikhand';
   background: white;
 
   &__fonctionnement-title {
-    margin-bottom: 10px;
+    margin-bottom:80px;
     font-family: $font-family-primary;
-    font-size: 60px;
+    font-size: 66px;
     padding:48px 80px 0 54px;
+    display: flex;
     
   }
 
@@ -79,135 +103,170 @@ $font-family-title: 'Shrikhand';
     margin: 0;
     list-style-type: none;
     padding: 0;
+    padding-bottom: 174px;
   }
 
   &__step {
     display: flex;
     align-items: center;
     border-radius:40px;
-    height:128px;
+    height:161px;
     width:84%;
     margin: 0 auto;
     background: var(--Background, #F6F6F6);
     box-shadow: $shadow-3;
-    margin-bottom: 25px;
+    margin-bottom:80px;
 
-      &:last-child {
-          margin-bottom: 0; // Supprime la marge sous la dernière étape
-      }
+    &:last-child {
+    margin-bottom: 0;
+    padding-left:38px;
+    }
 
-      &-icon {
-      margin-right: 30px;
-      margin-left: 99px;
-      color: $text-color-icon;
-      font-size:35px;
-      }
+    &-icon {
+    margin-right: 30px;
+    margin-left: 99px;
+    color: $text-color-icon;
+    font-size:35px;
+    }
 
-      &-text {
-      font-size: 40px;
-      color: $text-color;
-      font-family: $font-family-primary;
-      font-weight: 500;
-      line-height: normal;
-      padding-left:40px;
-      }
+    &-icon--special{
+    margin-right: 30px;
+    margin-left:60px;
+    font-size:35px;
+    color: $text-color-icon-special;
+    }
 
-      &-number {
-      color:$bg-color-light;
-      font-size: 30px;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      border: 1px solid;
-      align-items: center;
-      position: absolute;
-      background:$text-color-icon-special;
-      justify-content: center;
-      font-family: roboto;
-      left:6%;
-      }
+    &-text {
+    font-size: 40px;
+    color: $text-color;
+    font-family: $font-family-primary;
+    font-weight: 500;
+    line-height: normal;
+    padding-left:40px;
+    }
+
+    &-number {
+    color:$bg-color-light;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    position: absolute;
+    background:$text-color-icon-special;
+    justify-content: center;
+    font-family: roboto;
+    left:6%;
+    }
   }
 }
 
 /* Block: restaurants */
 .restaurants {
-  padding: 17px;
+  padding: 57px;
   background-color: $bg-color-lighter;
+  padding-top: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: Roboto;
+  font-size: 24px;
 
   &__title {
-    font-size: 66px;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left:28px;
+  font-size: 66px;
+  text-align: left;
+  margin-bottom:56px;
   }
 
   &__choice {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   }
 
   &__item {
-    position: relative;
-    border-radius: 30px;
-    overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
   }
 
   &__link {
-    text-decoration: none;
-    position: relative;
-    color: inherit;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
   }
 
   &__badge {
-    position: absolute;
-    background-color: $bg-color-badge;
-    color: $text-color-badge;
-    font-size: 25px;
-    padding: 7px 9px;
-    right: 18px;
-    margin-top: 26px;
+  position: absolute;
+  background-color:$bg-color-badge;
+  color:$text-color-badge;
+  font-size: 42px;
+  padding: 7px 9px;
+  right: 18px;
+  margin-top: 26px;
+  width: 217px;
+  height: 69px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   }
 
   &__image {
-    height: 520px;
-    width: 100%;
-    object-fit: cover;
+  height: 520px;
+  width: 100%;
+  object-fit: cover;
   }
 
   &__details {
-    padding: 10px;
-    background-color: #ffffff;
-    border: 4px solid white;
-    margin-bottom: 30px;
-    border-radius: 0px 0px 40px 40px
+  padding: 10px;
+  background-color: #ffffff;
+  border: 4px solid white;
+  margin-bottom: 30px;
+  border-radius: 0px 0px 40px 40px
   }
 
   &__name {
-    margin: 0 0 5px;
-    font-family: $font-family-primary;
-    font-size:46px;
+  margin: 0 0 5px;
+  font-family: $font-family-primary;
+  font-size:46px;
   }
 
   &__location {
-    font-size:48px;
-    color: $text-color-light;
-    margin: 0 0 10px;
-    padding: 0px;
+  font-size:48px;
+  color: $text-color-light;
+  margin: 0 0 10px;
+  padding: 0px;
   }
 
   &__heart {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right:80px;
-    bottom:50px;
-    font-size:60px;
+  display: flex;
+  justify-content: flex-end;
 
-      .fa-solid{
-        color:$text-color-icon-special;
+    .fa-heart{
+      margin-right:90px;
+      bottom:100px;
+      font-size:60px;
+
+      &.fa-regular{
+        position:absolute;
+        opacity: 0;
       }
-  }
 
+      &.fa-solid{
+        position:relative;
+        bottom:85px;
+      }
+
+      &:hover{
+        &.fa-solid{
+          transition: 0.5s all ease-in-out;
+          color:$text-color-icon-special;
+        }
+      }
+    }  
+  }
 }

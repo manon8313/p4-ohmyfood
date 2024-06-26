@@ -352,6 +352,7 @@ template {
 .reservation {
   text-align: center;
   background: #F6F6F6;
+  padding: 100px;
 }
 .reservation__title {
   font-size: 84px;
@@ -360,8 +361,28 @@ template {
 }
 .reservation__subtitle {
   font-size: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 84px;
   font-family: "Roboto";
+}
+.reservation a {
+  display: inline-block;
+  padding: 32px 20px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  color: #FFF;
+  text-decoration: none;
+  font-size: 45px;
+  border-radius: 80px;
+  width: 612px;
+  height: 118px;
+  font-family: Roboto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 57px;
+}
+.reservation a:hover {
+  transform: scale(1.1);
 }
 
 /* block: fonctionnement */
@@ -370,10 +391,11 @@ template {
   background: white;
 }
 .fonctionnement__fonctionnement-title {
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   font-family: "Roboto";
-  font-size: 60px;
+  font-size: 66px;
   padding: 48px 80px 0 54px;
+  display: flex;
 }
 .fonctionnement__filter {
   padding: 10px;
@@ -383,26 +405,34 @@ template {
   margin: 0;
   list-style-type: none;
   padding: 0;
+  padding-bottom: 174px;
 }
 .fonctionnement__step {
   display: flex;
   align-items: center;
   border-radius: 40px;
-  height: 128px;
+  height: 161px;
   width: 84%;
   margin: 0 auto;
   background: var(--Background, #F6F6F6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 }
 .fonctionnement__step:last-child {
   margin-bottom: 0;
+  padding-left: 38px;
 }
 .fonctionnement__step-icon {
   margin-right: 30px;
   margin-left: 99px;
   color: #7E7E7E;
   font-size: 35px;
+}
+.fonctionnement__step-icon--special {
+  margin-right: 30px;
+  margin-left: 60px;
+  font-size: 35px;
+  color: #9356DC;
 }
 .fonctionnement__step-text {
   font-size: 40px;
@@ -430,14 +460,19 @@ template {
 
 /* Block: restaurants */
 .restaurants {
-  padding: 17px;
+  padding: 57px;
   background-color: #F6F6F6;
+  padding-top: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: Roboto;
+  font-size: 24px;
 }
 .restaurants__title {
   font-size: 66px;
   text-align: left;
-  margin-bottom: 20px;
-  margin-left: 28px;
+  margin-bottom: 56px;
 }
 .restaurants__choice {
   display: flex;
@@ -458,10 +493,17 @@ template {
   position: absolute;
   background-color: #99E2D0;
   color: #008766;
-  font-size: 25px;
+  font-size: 42px;
   padding: 7px 9px;
   right: 18px;
   margin-top: 26px;
+  width: 217px;
+  height: 69px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .restaurants__image {
   height: 520px;
@@ -489,12 +531,22 @@ template {
 .restaurants__heart {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  right: 80px;
-  bottom: 50px;
+}
+.restaurants__heart .fa-heart {
+  margin-right: 90px;
+  bottom: 100px;
   font-size: 60px;
 }
-.restaurants__heart .fa-solid {
+.restaurants__heart .fa-heart.fa-regular {
+  position: absolute;
+  opacity: 0;
+}
+.restaurants__heart .fa-heart.fa-solid {
+  position: relative;
+  bottom: 85px;
+}
+.restaurants__heart .fa-heart:hover.fa-solid {
+  transition: 0.5s all ease-in-out;
   color: #9356DC;
 }
 
