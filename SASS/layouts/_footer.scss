@@ -1,12 +1,12 @@
  // Variables
-    $footer-bg-color: #353535;
+    $footer-bg-color:#353535;
     $footer-text-color: #fff;
     $footer-padding:25px 25px 25px 25px;
     $footer-title-font-family: 'Shrikhand';
     $footer-title-font-size:50px;
     $footer-title-font-weight: 400;
     $footer-list-font-size:44px;
-    $footer-gap: 7px;
+    $footer-gap:14px;
     $footer-list-item-margin-bottom: 10px;
     $footer-list-item-icon-margin-right: 10px;
  
@@ -24,6 +24,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: $footer-gap;
+        padding-left: 45px;
     }
 
     &__title {
@@ -31,7 +32,8 @@
         font-family: $footer-title-font-family;
         font-size: $footer-title-font-size;
         font-weight: $footer-title-font-weight;
-        padding-bottom: 30px;
+        padding-bottom:46px;
+        padding-top: 42px;
     }
 
     &__list {
@@ -49,6 +51,7 @@
         margin-bottom: $footer-list-item-margin-bottom;
         display: flex;
         align-items: center;
+        gap: 22px;
 
         i {
             margin-right: $footer-list-item-icon-margin-right;
