@@ -317,9 +317,12 @@ template {
 }
 .header__link {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  padding: 14px 89px 13px 89px;
+  align-items: center;
+  padding: 72px 89px 39px 89px;
+}
+.header__link__logo {
+  width: 62%;
 }
 
 /* Logo link styling */
@@ -331,16 +334,18 @@ template {
   height: 130px;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  gap: 35px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .location__icon {
   margin-right: 8px;
-  font-size: 20px;
+  font-size: 50px;
 }
 .location__text {
   margin: 0;
-  font-size: 44px;
+  font-size: 46px;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 /* Block: reservation */
@@ -351,50 +356,35 @@ template {
 .reservation__title {
   font-size: 84px;
   margin-bottom: 10px;
+  margin-top: 0px;
 }
 .reservation__subtitle {
   font-size: 45px;
   margin-bottom: 20px;
   font-family: "Roboto";
 }
-.reservation__input {
-  width: 56%;
-  height: 116px;
-  margin-bottom: 20px;
-  border-radius: 100px;
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  margin-left: 82px;
-  margin-right: 75px;
-  border: none;
-  padding-top: 12px;
-}
-.reservation__input::placeholder {
-  color: white;
+
+/* block: fonctionnement */
+.fonctionnement {
   text-align: center;
-  font-family: "Roboto";
-  font-size: 40px;
-}
-.reservation__fonctionnement {
-  text-align: left;
   background: white;
 }
-.reservation__fonctionnement-title {
+.fonctionnement__fonctionnement-title {
   margin-bottom: 10px;
   font-family: "Roboto";
   font-size: 60px;
   padding: 48px 80px 0 54px;
 }
-.reservation__filter {
+.fonctionnement__filter {
   padding: 10px;
   border-radius: 8px;
 }
-.reservation__steps {
+.fonctionnement__steps {
+  margin: 0;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
-.reservation__steps__step {
+.fonctionnement__step {
   display: flex;
   align-items: center;
   border-radius: 40px;
@@ -405,19 +395,16 @@ template {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 25px;
 }
-.reservation__steps__step-icon {
+.fonctionnement__step:last-child {
+  margin-bottom: 0;
+}
+.fonctionnement__step-icon {
   margin-right: 30px;
   margin-left: 99px;
   color: #7E7E7E;
   font-size: 35px;
 }
-.reservation__steps__step-icon--special {
-  color: #9356DC;
-  margin-right: 30px;
-  margin-left: 99px;
-  font-size: 35px;
-}
-.reservation__steps__step-text {
+.fonctionnement__step-text {
   font-size: 40px;
   color: #000;
   font-family: "Roboto";
@@ -425,7 +412,7 @@ template {
   line-height: normal;
   padding-left: 40px;
 }
-.reservation__steps__step .step-number {
+.fonctionnement__step-number {
   color: #EAEAEA;
   font-size: 30px;
   border-radius: 50%;
@@ -477,7 +464,9 @@ template {
   margin-top: 26px;
 }
 .restaurants__image {
-  max-width: 100%;
+  height: 520px;
+  width: 100%;
+  object-fit: cover;
 }
 .restaurants__details {
   padding: 10px;

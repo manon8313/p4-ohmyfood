@@ -1,18 +1,28 @@
 // Variables
 
 $header-padding: 0px;
-$header-link-padding: 14px 89px 13px 89px;
+$header-link-padding:72px 89px 39px 89px;
+
+@mixin flex-center($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
 
 /* Header styling */
 .header {
     padding: $header-padding;
 
     &__link {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flex-center(space-around, center);
         padding: $header-link-padding;
 
+        &__logo {
+        width:62%;
+        }
     }
 }
   
