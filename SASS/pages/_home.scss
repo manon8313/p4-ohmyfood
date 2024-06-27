@@ -1,4 +1,4 @@
-/* Variables */
+// Variables 
 $bg-color-light: #EAEAEA;
 $bg-color-lighter: #F6F6F6;
 $text-color: #000;
@@ -12,7 +12,7 @@ $shadow-2: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 $font-family-primary: 'Roboto';
 $font-family-title: 'Shrikhand';
 
-/* mixed */
+// mixed
 
 @mixin Button-Gradient{
   background: var(--Button-Gradient, linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%));
@@ -22,6 +22,12 @@ $font-family-title: 'Shrikhand';
   box-shadow: $shadow;
 }
 
+@mixin roboto-font{
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
+}
 
 
 /* Block styling for location */
@@ -76,12 +82,10 @@ $font-family-title: 'Shrikhand';
     border-radius:80px;
     width: 612px;
     height: 134px;
-    font-family: Roboto;
     text-align: center;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     margin-bottom: 57px;
+    @include roboto-font;
 
     &:hover {
     transform: scale(1.1);
@@ -150,10 +154,9 @@ $font-family-title: 'Shrikhand';
     &-text {
     font-size: 40px;
     color: $text-color;
-    font-family: $font-family-primary;
     font-weight: 500;
-    line-height: normal;
     padding-left:40px;
+    @include roboto-font;
     }
 
     &-number {
@@ -168,7 +171,7 @@ $font-family-title: 'Shrikhand';
     position: absolute;
     background:$text-color-icon-special;
     justify-content: center;
-    font-family: roboto;
+    @include roboto-font;
     left:6%;
     }
   }
@@ -179,11 +182,9 @@ $font-family-title: 'Shrikhand';
   padding: 57px;
   background-color: $bg-color-lighter;
   padding-top: 63px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  font-family: Roboto;
   font-size: 24px;
+  @include roboto-font;
 
   &__title {
   font-size: 66px;
@@ -214,22 +215,22 @@ $font-family-title: 'Shrikhand';
   background-color:$bg-color-badge;
   color:$text-color-badge;
   font-size: 42px;
-  padding: 7px 9px;
+  padding: 7px;
   right: 18px;
   margin-top: 26px;
   width: 217px;
   height: 69px;
   text-align: center;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  margin-right: 14px;
+  @include roboto-font;
   }
 
   &__image {
   height: 520px;
   width: 100%;
   object-fit: cover;
+  border-radius: 50px 50px 0px 0px;
   }
 
   &__details {
@@ -252,10 +253,7 @@ $font-family-title: 'Shrikhand';
   color: $text-color;
   margin: 0 0 10px;
   padding: 0px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  font-family: Roboto;
+  @include roboto-font;
   }
 
   &__heart {
@@ -268,12 +266,12 @@ $font-family-title: 'Shrikhand';
       font-size:60px;
 
       &.fa-regular{
-        position:absolute;
+        position:relative;
         opacity: 0;
       }
 
       &.fa-solid{
-        position:relative;
+        position:absolute;
         bottom:85px;
       }
 

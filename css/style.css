@@ -326,8 +326,6 @@ template {
 }
 
 /* Logo link styling */
-/* Variables */
-/* mixed */
 /* Block styling for location */
 .location {
   display: flex;
@@ -376,12 +374,13 @@ template {
   border-radius: 80px;
   width: 612px;
   height: 134px;
-  font-family: Roboto;
   text-align: center;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   margin-bottom: 57px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
 }
 .reservation a:hover {
   transform: scale(1.1);
@@ -439,10 +438,12 @@ template {
 .fonctionnement__step-text {
   font-size: 40px;
   color: #000;
-  font-family: "Roboto";
   font-weight: 500;
-  line-height: normal;
   padding-left: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
 }
 .fonctionnement__step-number {
   color: #EAEAEA;
@@ -456,7 +457,10 @@ template {
   position: absolute;
   background: #9356DC;
   justify-content: center;
-  font-family: roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
   left: 6%;
 }
 
@@ -465,11 +469,12 @@ template {
   padding: 57px;
   background-color: #F6F6F6;
   padding-top: 63px;
-  font-style: normal;
   font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
   line-height: normal;
   font-family: Roboto;
-  font-size: 24px;
 }
 .restaurants__title {
   font-size: 66px;
@@ -496,21 +501,24 @@ template {
   background-color: #99E2D0;
   color: #008766;
   font-size: 42px;
-  padding: 7px 9px;
+  padding: 7px;
   right: 18px;
   margin-top: 26px;
   width: 217px;
   height: 69px;
   text-align: center;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
+  margin-right: 14px;
+  font-style: normal;
+  font-weight: 300;
   line-height: normal;
+  font-family: Roboto;
 }
 .restaurants__image {
   height: 520px;
   width: 100%;
   object-fit: cover;
+  border-radius: 50px 50px 0px 0px;
 }
 .restaurants__details {
   padding: 10px;
@@ -545,11 +553,11 @@ template {
   font-size: 60px;
 }
 .restaurants__heart .fa-heart.fa-regular {
-  position: absolute;
+  position: relative;
   opacity: 0;
 }
 .restaurants__heart .fa-heart.fa-solid {
-  position: relative;
+  position: absolute;
   bottom: 85px;
 }
 .restaurants__heart .fa-heart:hover.fa-solid {
@@ -593,6 +601,10 @@ template {
   display: flex;
   align-items: center;
   gap: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
 }
 .footer__list-item i {
   margin-right: 10px;

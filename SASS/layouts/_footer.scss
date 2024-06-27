@@ -10,6 +10,14 @@
     $footer-list-item-margin-bottom: 10px;
     $footer-list-item-icon-margin-right: 10px;
  
+ // mixed
+
+    @mixin roboto-font{
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: Roboto;
+    }
  
  /* Block: footer */
 
@@ -52,6 +60,7 @@
         display: flex;
         align-items: center;
         gap: 22px;
+        @include roboto-font;
 
         i {
             margin-right: $footer-list-item-icon-margin-right;
