@@ -1,0 +1,36 @@
+.restaurants__heart {
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    width: 61px;
+    height: 61px;
+
+
+    .fa-heart{
+        bottom:100px;
+        font-size:60px;
+
+        &.fa-regular{
+            position:absolute;
+            opacity: 1;
+            bottom: 0;
+            right:0;
+        }
+
+        &.fa-solid{
+            position:absolute;
+            bottom:0;
+            opacity:0;
+            right:0;
+            transition: 0.5s all ease-in-out;
+        }
+
+        &:hover{
+            &.fa-solid{
+                transition: 0.5s all ease-in-out;
+                color:$text-color-icon-special;
+                opacity:1;
+            }
+        }
+    }  
+}
