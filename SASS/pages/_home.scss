@@ -83,12 +83,12 @@ $font-family-title: 'Shrikhand';
     width: 612px;
     height: 134px;
     text-align: center;
-    font-weight: 500;
     margin-bottom: 57px;
     @include roboto-font;
 
     &:hover {
-    transform: scale(1.1);
+      transition: 0.5s all ease-in-out;
+      opacity: 0.85;
     }
   }
 }
@@ -234,11 +234,14 @@ $font-family-title: 'Shrikhand';
   }
 
   &__details {
-  padding: 10px;
+  padding:16px 25px 12px 13px;
   background-color: #ffffff;
   border: 4px solid white;
   margin-bottom: 30px;
-  border-radius: 0px 0px 40px 40px
+  border-radius: 0px 0px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
 
   &__name {
