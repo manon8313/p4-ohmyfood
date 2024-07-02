@@ -325,7 +325,15 @@ template {
   width: 62%;
 }
 
-/* Logo link styling */
+/****** Responsive desktop *******/
+@media screen and (max-width: 1440px) {
+  .header__link {
+    padding-bottom: 100px;
+  }
+  .header__link__logo {
+    width: 34%;
+  }
+}
 /* Block styling for location */
 .location {
   display: flex;
@@ -334,7 +342,7 @@ template {
   justify-content: center;
   align-items: center;
   gap: 35px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 12px 25px 6px rgb(0, 0, 0);
 }
 .location__icon {
   margin-right: 8px;
@@ -546,10 +554,6 @@ template {
   line-height: normal;
   font-family: Roboto;
 }
-.restaurants__heart {
-  display: flex;
-  justify-content: flex-end;
-}
 
 /* Block: footer */
 .footer {
@@ -594,8 +598,10 @@ template {
 }
 .footer__list-item i {
   margin-right: 10px;
+  font-size: 30.8px;
 }
 
+/****** Responsive desktop *******/
 /* Variables home */
 /* color home */
 /* text home */
@@ -609,7 +615,6 @@ template {
   height: 61px;
 }
 .restaurants__heart .fa-heart {
-  bottom: 100px;
   font-size: 60px;
 }
 .restaurants__heart .fa-heart.fa-regular {

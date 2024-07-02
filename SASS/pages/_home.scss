@@ -7,7 +7,7 @@ $text-color-icon: #7E7E7E;
 $text-color-icon-special: #9356DC;
 $text-color-badge: #008766;
 $bg-color-badge: #99E2D0;
-$shadow-1: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-1: 0px 12px 25px 6px rgba(0, 0, 0, 1.25);
 $shadow-2: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 $font-family-primary: 'Roboto';
 $font-family-title: 'Shrikhand';
@@ -257,12 +257,5 @@ $font-family-title: 'Shrikhand';
   margin: 0 0 10px;
   padding: 0px;
   @include roboto-font;
-  }
-
-  &__heart {
-  display: flex;
-  justify-content: flex-end;
-
-    
   }
 }
