@@ -22,7 +22,7 @@
  /* Block: footer */
 
 
-  .footer {
+    .footer {
     background-color: $footer-bg-color;
     color: $footer-text-color;
     padding: $footer-padding;
@@ -74,5 +74,42 @@
 
 @media screen and (max-width: 1440px){
 
+    .footer{
+        margin: 0;
+        display: flex;
+        width: 1440px;
+        height: 147px;
+        padding: 30px 25px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 16px;
+
+    &__content {
+            display: flex;
+            flex-direction: row-reverse;
+            gap:40px;
+        }
+
+    &__title{
+           padding: 14px;
+           font-size: 30px;
+        }
+
+    &__list {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+    &__list-item{
+        gap:0px;
+        align-items: flex-start;
+    }   
     
+        i {
+            font-size: 20px;
+        }
+    }
 }

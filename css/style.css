@@ -602,6 +602,41 @@ template {
 }
 
 /****** Responsive desktop *******/
+@media screen and (max-width: 1440px) {
+  .footer {
+    margin: 0;
+    display: flex;
+    width: 1440px;
+    height: 147px;
+    padding: 30px 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .footer__title {
+    padding: 14px;
+    font-size: 30px;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  .footer__list-item {
+    gap: 0px;
+    align-items: flex-start;
+  }
+  .footer i {
+    font-size: 20px;
+  }
+}
 /* Variables home */
 /* color home */
 /* text home */
