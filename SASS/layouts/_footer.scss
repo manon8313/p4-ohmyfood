@@ -18,6 +18,12 @@
     line-height: normal;
     font-family: Roboto;
     }
+
+ // Variables de breakpoint
+
+    $breakpoint-medium: 768px;
+    $breakpoint-xlarge: 1440px;
+
  
  /* Block: footer */
 
@@ -71,14 +77,13 @@
 
 
 /****** Responsive desktop *******/
+// Breakpoint xlarge
 
-@media screen and (max-width: 1440px){
+@media (min-width: $breakpoint-xlarge) {
 
     .footer{
         margin: 0;
         display: flex;
-        width: 1440px;
-        height: 147px;
         padding: 30px 25px;
         justify-content: flex-end;
         align-items: flex-end;

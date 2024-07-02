@@ -3,6 +3,12 @@
 $header-padding: 0px;
 $header-link-padding:72px 89px 39px 89px;
 
+
+ // Variables de breakpoint
+
+ $breakpoint-medium: 768px;
+ $breakpoint-xlarge: 1440px;
+
 @mixin flex-center($justify: center, $align: center) {
     display: flex;
     justify-content: $justify;
@@ -28,7 +34,9 @@ $header-link-padding:72px 89px 39px 89px;
   
 /****** Responsive desktop *******/
 
-@media screen and (max-width: 1440px) {
+// Breakpoint xlarge
+
+@media (min-width: $breakpoint-xlarge)  {
 
 .header{
     
@@ -36,7 +44,7 @@ $header-link-padding:72px 89px 39px 89px;
         padding-bottom:100px;
 
         &__logo{
-            width:34%;
+            width:26%;
         }
     }
 }

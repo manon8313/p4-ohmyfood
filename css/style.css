@@ -326,12 +326,12 @@ template {
 }
 
 /****** Responsive desktop *******/
-@media screen and (max-width: 1440px) {
+@media (min-width: 1440px) {
   .header__link {
     padding-bottom: 100px;
   }
   .header__link__logo {
-    width: 34%;
+    width: 26%;
   }
 }
 /* Block styling for location */
@@ -371,6 +371,7 @@ template {
   font-size: 45px;
   margin-bottom: 84px;
   font-family: "Roboto";
+  line-height: normal;
 }
 .reservation a {
   background: var(--Button-Gradient, linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%));
@@ -555,6 +556,92 @@ template {
   font-family: Roboto;
 }
 
+/****** Responsive desktop *******/
+@media (min-width: 1440px) {
+  /* Block styling for location */
+  .location {
+    display: flex;
+    gap: 17px;
+    box-shadow: none;
+  }
+  .location__icon {
+    margin-right: 8px;
+    font-size: 28px;
+  }
+  .location__text {
+    margin: 0;
+    font-size: 30px;
+  }
+  /* Block: reservation */
+  .reservation {
+    text-align: center;
+    background: #F6F6F6;
+    padding: 100px;
+  }
+  .reservation__title {
+    font-size: 59px;
+  }
+  .reservation__subtitle {
+    font-size: 26px;
+  }
+  .reservation a {
+    font-size: 23px;
+    width: 334px;
+    height: 90px;
+  }
+  /* block: fonctionnement */
+  .fonctionnement {
+    display: flex;
+    padding: 50px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .fonctionnement__fonctionnement-title {
+    margin: 0;
+    padding: 0px 0px 0px 129px;
+    font-size: 34px;
+  }
+  .fonctionnement__filter {
+    width: 100%;
+    padding: 50px 120px;
+  }
+  .fonctionnement__steps {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 22px;
+  }
+  .fonctionnement__step {
+    width: 208%;
+    height: 56px;
+    margin: 0;
+  }
+  .fonctionnement__step:last-child {
+    padding-left: 38px;
+  }
+  .fonctionnement__step-icon {
+    font-size: 28px;
+    margin-left: 69px;
+    margin-right: 26px;
+  }
+  .fonctionnement__step-icon--special {
+    font-size: 28px;
+    margin-left: 30px;
+    margin-right: 43px;
+  }
+  .fonctionnement__step-text {
+    font-size: 20px;
+    padding: 0;
+  }
+  .fonctionnement__step-number {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    left: 0;
+  }
+}
 /* Block: footer */
 .footer {
   background-color: #353535;
@@ -602,12 +689,10 @@ template {
 }
 
 /****** Responsive desktop *******/
-@media screen and (max-width: 1440px) {
+@media (min-width: 1440px) {
   .footer {
     margin: 0;
     display: flex;
-    width: 1440px;
-    height: 147px;
     padding: 30px 25px;
     justify-content: flex-end;
     align-items: flex-end;
