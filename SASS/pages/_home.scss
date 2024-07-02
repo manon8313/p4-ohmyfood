@@ -391,23 +391,23 @@ $font-family-title: 'Shrikhand';
 
 /* Block: restaurants */
 .restaurants {
-  padding: 57px;
-  padding-top: 63px;
+   padding: 57px;
+    padding-top: 63px;
  
-  &__title {
-  font-size: 34px;
-  margin-bottom: 28px;
-  padding: 0px 0px 0px 79px;
-  }
+   &__title {
+   font-size: 34px;
+   margin-bottom: 28px;
+   padding: 0px 0px 0px 79px;
+   }
 
-  &__choice {
+   &__choice {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 30px;
     margin-left: 84px;
-  }
+   }
 
-  &__badge {
+   &__badge {
     font-size: 18px;
     padding: 4px;
     right: 138px;
@@ -415,32 +415,24 @@ $font-family-title: 'Shrikhand';
     width: 115px;
     height: 29px;
     margin-right: 15px;
-  }
+   }
 
-  &__image {
+   &__image {
     width: 531px;
     height: 231px;
-  }
+   }
 
-  &__details {
+   &__details {
     width: 531px;
     height: 231px;
+   }
+
+   &__name {
+    font-size:30px;
+   }
+
+   &__location {
+    font-size:27px;
+   }
   }
-
-  &__name {
-  font-size:30px;
-  }
-
-  &__location {
-  font-size:27px;
-  }
-}
-
-
-
-
-
-
-
-
 }
