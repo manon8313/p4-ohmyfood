@@ -505,24 +505,6 @@ template {
   position: relative;
   color: inherit;
 }
-.restaurants__badge {
-  position: absolute;
-  background-color: #99E2D0;
-  color: #008766;
-  font-size: 42px;
-  padding: 7px;
-  right: 18px;
-  margin-top: 26px;
-  width: 217px;
-  height: 69px;
-  text-align: center;
-  font-weight: 500;
-  margin-right: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  font-family: Roboto;
-}
 .restaurants__image {
   height: 520px;
   width: 100%;
@@ -658,15 +640,6 @@ template {
     grid-gap: 30px;
     margin-left: 84px;
   }
-  .restaurants__badge {
-    font-size: 18px;
-    padding: 4px;
-    right: 138px;
-    margin-top: 21px;
-    width: 115px;
-    height: 29px;
-    margin-right: 15px;
-  }
   .restaurants__image {
     width: 531px;
     height: 231px;
@@ -794,6 +767,38 @@ template {
   transition: 0.5s all ease-in-out;
   color: #9356DC;
   opacity: 1;
+}
+
+.restaurants__badge {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 42px;
+  padding: 7px;
+  right: 18px;
+  margin-top: 26px;
+  width: 217px;
+  height: 69px;
+  text-align: center;
+  font-weight: 500;
+  margin-right: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Roboto;
+}
+
+/****** Responsive desktop *******/
+@media (min-width: 1440px) {
+  .restaurants__badge {
+    font-size: 18px;
+    padding: 4px;
+    right: 138px;
+    margin-top: 21px;
+    width: 115px;
+    height: 29px;
+    margin-right: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
