@@ -3,7 +3,14 @@
  $breakpoint-medium: 768px;
  $breakpoint-xlarge: 1440px;
 
+// mixed
 
+ @mixin roboto-font{
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-family: Roboto;
+  }
 
 
 .restaurants {
@@ -22,7 +29,7 @@
         font-weight: 500;
         margin-right: 14px;
         @include roboto-font;
-        }
+    }
 }        
 
 

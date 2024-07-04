@@ -7,8 +7,9 @@ $text-color-icon: #7E7E7E;
 $text-color-icon-special: #9356DC;
 $text-color-badge: #008766;
 $bg-color-badge: #99E2D0;
-$shadow-1: 0px 12px 25px 6px rgba(0, 0, 0, 1.25);
+$shadow-1: 0px 4px 15px 9px rgba(0, 0, 0, 0.25);
 $shadow-2: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+$shadow-3: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 $font-family-primary: 'Roboto';
 $font-family-title: 'Shrikhand';
 
@@ -46,6 +47,7 @@ $font-family-title: 'Shrikhand';
   align-items: center;
   gap:35px;
   @include shadow($shadow-1);
+  position: relative;
 
   &__icon {
     margin-right: 8px;
@@ -79,27 +81,7 @@ $font-family-title: 'Shrikhand';
     font-family: $font-family-primary;
     line-height: normal;
   }
-  
-  a {
-    @include Button-Gradient;
-    display: inline-block;
-    padding:32px 20px;
-    color:#FFF;
-    text-decoration: none;
-    font-size:45px;
-    border-radius:80px;
-    width: 612px;
-    height: 134px;
-    text-align: center;
-    margin-bottom: 57px;
-    @include roboto-font;
-
-    &:hover {
-      transition: 0.5s all ease-in-out;
-      opacity: 0.85;
-    }
-  }
-}
+}  
 
 /* block: fonctionnement */
 
@@ -390,7 +372,6 @@ $font-family-title: 'Shrikhand';
     grid-gap: 30px;
     margin-left: 84px;
    }
-
 
    &__image {
     width: 531px;
