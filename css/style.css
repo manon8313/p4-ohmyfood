@@ -410,7 +410,6 @@ template {
 }
 .fonctionnement__step:last-child {
   margin-bottom: 0;
-  padding-left: 38px;
 }
 .fonctionnement__step-icon {
   margin-right: 30px;
@@ -576,21 +575,17 @@ template {
     gap: 22px;
   }
   .fonctionnement__step {
-    width: 208%;
     height: 56px;
     margin: 0;
   }
-  .fonctionnement__step:last-child {
-    padding-left: 38px;
-  }
   .fonctionnement__step-icon {
     font-size: 28px;
-    margin-left: 69px;
+    margin-left: 33px;
     margin-right: 26px;
   }
   .fonctionnement__step-icon--special {
     font-size: 28px;
-    margin-left: 30px;
+    margin-left: 33px;
     margin-right: 43px;
   }
   .fonctionnement__step-text {
@@ -679,6 +674,10 @@ template {
 .footer__list-item i {
   margin-right: 10px;
   font-size: 30.8px;
+}
+.footer__list-item a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /****** Responsive desktop *******/

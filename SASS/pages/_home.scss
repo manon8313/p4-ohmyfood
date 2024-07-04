@@ -124,7 +124,6 @@ $font-family-title: 'Shrikhand';
 
     &:last-child {
     margin-bottom: 0;
-    padding-left:38px;
     }
 
     &-icon {
@@ -319,24 +318,23 @@ $font-family-title: 'Shrikhand';
     }
 
     &__step {
-      width: 208%;
       height: 56px;
       margin: 0;
 
 
       &:last-child {
-      padding-left:38px;
+    
       }
 
       &-icon {
         font-size: 28px;
-        margin-left: 69px;
+        margin-left: 33px;
         margin-right: 26px;
       }
 
       &-icon--special{
         font-size: 28px;
-        margin-left: 30px;
+        margin-left: 33px;
         margin-right: 43px;
       }
 

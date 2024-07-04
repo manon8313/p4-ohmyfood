@@ -72,6 +72,11 @@
             margin-right: $footer-list-item-icon-margin-right;
             font-size: 30.8px;
         }
+
+        a{
+            color:$footer-text-color;
+            text-decoration: none;
+        }
     }
 }
 
