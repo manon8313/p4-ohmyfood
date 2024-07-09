@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -325,6 +326,21 @@ template {
   width: 62%;
 }
 
+/****** Responsive tablet *******/
+@media (min-widht: 768px) {
+  .header {
+    padding: 0px;
+  }
+  .header__link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 72px 89px 39px 89px;
+  }
+  .header__link__logo {
+    width: 62%;
+  }
+}
 /****** Responsive desktop *******/
 @media (min-width: 1440px) {
   .header__link {
@@ -342,7 +358,7 @@ template {
   justify-content: center;
   align-items: center;
   gap: 35px;
-  box-shadow: 0px 4px 15px 9px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   position: relative;
 }
 .location__icon {
@@ -517,8 +533,76 @@ template {
   font-family: Roboto;
 }
 
+/****** Responsive tablet *******/
+@media (min-width: 767px) {
+  /* Block styling for location */
+  .location {
+    display: flex;
+    gap: 17px;
+    box-shadow: none;
+  }
+  .location__icon {
+    margin-right: 8px;
+    font-size: 45px;
+  }
+  .location__text {
+    margin: 0;
+    font-size: 45px;
+  }
+  /* Block: reservation */
+  .reservation__title {
+    font-size: 65px;
+  }
+  /* block: fonctionnement */
+  .fonctionnement__fonctionnement-title {
+    font-size: 74px;
+  }
+  .fonctionnement__filter {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .fonctionnement__steps {
+    padding-bottom: 100px;
+  }
+  .fonctionnement__step-icon {
+    margin-right: 50px;
+    margin-left: 87px;
+    font-size: 74px;
+  }
+  .fonctionnement__step-icon--special {
+    margin-right: 50px;
+    margin-left: 87px;
+    font-size: 74px;
+  }
+  .fonctionnement__step-text {
+    font-size: 42px;
+    padding-left: 55px;
+  }
+  .fonctionnement__step-number {
+    width: 66px;
+    height: 66px;
+  }
+  /* Block: restaurants */
+  .restaurants__title {
+    font-size: 74px;
+    margin-top: 30px;
+    margin-bottom: 85px;
+  }
+  .restaurants__choice {
+    gap: 55px;
+  }
+  .restaurants__details {
+    margin-bottom: 22px;
+  }
+  .restaurants__name {
+    font-size: 55px;
+  }
+  .restaurants__location {
+    margin: 0 0 23px;
+  }
+}
 /****** Responsive desktop *******/
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   /* Block styling for location */
   .location {
     display: flex;
@@ -619,17 +703,26 @@ template {
     width: 531px;
     height: 231px;
   }
+  .restaurants__link {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
   .restaurants__details {
     width: 531px;
-    height: 231px;
+    height: 170px;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
   .restaurants__name {
     font-size: 30px;
   }
   .restaurants__location {
     font-size: 27px;
+    margin: 0 0 10px;
   }
 }
+/* Styles de base pour les écrans jusqu'à 767px */
 /* Block: footer */
 .footer {
   background-color: #353535;
@@ -680,8 +773,33 @@ template {
   text-decoration: none;
 }
 
+/****** Responsive tablet *******/
+/* Media Query pour les tablettes à partir de 768px */
+@media screen and (min-width: 768px) {
+  .footer__content {
+    align-items: center;
+  }
+  .footer__title {
+    font-size: 68px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .footer__list {
+    align-items: center;
+    gap: 18px;
+    font-size: 46px;
+  }
+  .footer__list-item {
+    align-items: center;
+    gap: 22px;
+    flex-direction: row-reverse;
+  }
+  .footer__list-item a {
+    text-decoration: underline;
+  }
+}
 /****** Responsive desktop *******/
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .footer {
     margin: 0;
     display: flex;
@@ -709,9 +827,14 @@ template {
   .footer__list-item {
     gap: 0px;
     align-items: flex-start;
+    flex-direction: row;
   }
   .footer i {
     font-size: 20px;
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
   }
 }
 /* Variables home */
@@ -795,11 +918,12 @@ template {
   font-weight: 300;
   line-height: normal;
   font-family: Roboto;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 .button:hover {
   transition: 0.5s all ease-in-out;
   opacity: 0.85;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

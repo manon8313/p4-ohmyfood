@@ -1,20 +1,21 @@
 .button {
-    @include Button-Gradient;
-    display: inline-block;
-    padding:32px 20px;
-    color:#FFF;
-    text-decoration: none;
-    font-size:45px;
-    border-radius:80px;
-    width: 612px;
-    height: 134px;
-    text-align: center;
-    margin-bottom: 57px;
-    @include roboto-font;
+  @include Button-Gradient;
+  display: inline-block;
+  padding:32px 20px;
+  color:#FFF;
+  text-decoration: none;
+  font-size:45px;
+  border-radius:80px;
+  width: 612px;
+  height: 134px;
+  text-align: center;
+  margin-bottom: 57px;
+  @include roboto-font;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
 
     &:hover {
       transition: 0.5s all ease-in-out;
       opacity: 0.85;
-      box-shadow: $shadow-3;
+      box-shadow: none;
     }
-  }
+}

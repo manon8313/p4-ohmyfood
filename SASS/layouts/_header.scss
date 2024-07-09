@@ -4,11 +4,6 @@ $header-padding: 0px;
 $header-link-padding:72px 89px 39px 89px;
 
 
- // Variables de breakpoint
-
- $breakpoint-medium: 768px;
- $breakpoint-xlarge: 1440px;
-
 @mixin flex-center($justify: center, $align: center) {
     display: flex;
     justify-content: $justify;
@@ -32,11 +27,36 @@ $header-link-padding:72px 89px 39px 89px;
     }
 }
   
+
+
+
+
+/****** Responsive tablet *******/
+
+@media screen and (min-widht: 768px)  {
+    
+    .header {
+        padding: $header-padding;
+        
+        &__link {
+            @include flex-center(space-around, center);
+            padding: $header-link-padding;
+            
+            &__logo {
+                width:62%;
+            }
+        }
+    }
+    
+    
+}
+
+
 /****** Responsive desktop *******/
 
 // Breakpoint xlarge
 
-@media (min-width: $breakpoint-xlarge)  {
+@media scren and (min-width: 1024px)  {
 
 .header{
     
