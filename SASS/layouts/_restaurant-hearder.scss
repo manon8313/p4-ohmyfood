@@ -1,0 +1,19 @@
+/* Header-restaurant styling */
+
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+    
+    &__links {
+        text-decoration: none;
+        color: #333333;
+        
+        i {
+            text-decoration: none;
+        }
+    }
+    
+    &__logos {
+        width:100%;
+    }
+}
