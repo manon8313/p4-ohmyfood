@@ -327,7 +327,7 @@ template {
 }
 
 /****** Responsive tablet *******/
-@media (min-widht: 768px) {
+@media screen and (min-widht: 768px) {
   .header {
     padding: 0px;
   }
@@ -342,7 +342,7 @@ template {
   }
 }
 /****** Responsive desktop *******/
-@media (min-width: 1440px) {
+@media scren and (min-width: 1024px) {
   .header__link {
     padding-bottom: 100px;
   }
@@ -534,7 +534,7 @@ template {
 }
 
 /****** Responsive tablet *******/
-@media (min-width: 767px) {
+@media screen and (min-width: 768px) {
   /* Block styling for location */
   .location {
     display: flex;
@@ -596,13 +596,14 @@ template {
   }
   .restaurants__name {
     font-size: 55px;
+    text-decoration: underline;
   }
   .restaurants__location {
     margin: 0 0 23px;
   }
 }
 /****** Responsive desktop *******/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   /* Block styling for location */
   .location {
     display: flex;
@@ -716,6 +717,7 @@ template {
   }
   .restaurants__name {
     font-size: 30px;
+    text-decoration: none;
   }
   .restaurants__location {
     font-size: 27px;
