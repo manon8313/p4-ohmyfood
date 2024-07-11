@@ -2,7 +2,12 @@
 
 .header {
     background-color: #ffffff;
-    padding: 10px;
+    display: flex;
+    width: 375px;
+    height: 63px;
+    padding: 14px 89px 13px 17px;
+    align-items: center;
+    gap: 42px;
     
     &__links {
         text-decoration: none;
@@ -10,10 +15,17 @@
         
         i {
             text-decoration: none;
+            width: 30px;
+            height: 30px;
         }
     }
     
     &__logos {
-        width:100%;
+        display: flex;
+        width: 197px;
+        height: 36px;
+        padding: 0px 19px 0px 16px;
+        justify-content: center;
+        align-items: center;
     }
 }
