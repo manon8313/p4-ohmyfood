@@ -1,163 +1,32 @@
- // Variables
-    $footer-bg-color:#353535;
-    $footer-text-color: #fff;
-    $footer-padding:25px 25px 25px 25px;
-    $footer-title-font-family: 'Shrikhand';
-    $footer-title-font-size:50px;
-    $footer-title-font-weight: 400;
-    $footer-list-font-size:44px;
-    $footer-gap:14px;
-    $footer-list-item-margin-bottom: 10px;
-    $footer-list-item-icon-margin-right: 10px;
- 
- // mixed
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding-bottom: 20px;
 
-    @mixin roboto-font{
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-family: Roboto;
+    h2 {
+        font-family: 'Shrikhand';
+        padding: 22px 25px;
+        font-weight: 100;
     }
-
-
- /* Styles de base pour les écrans jusqu'à 767px */
- /* Block: footer */
-
-
-    .footer {
-    background-color: $footer-bg-color;
-    color: $footer-text-color;
-    padding: $footer-padding;
-
-    &__content {
+    div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: $footer-gap;
-        padding-left: 45px;
-    }
-
-    &__title {
-        margin: 0;
-        font-family: $footer-title-font-family;
-        font-size: $footer-title-font-size;
-        font-weight: $footer-title-font-weight;
-        padding-bottom:46px;
-        padding-top: 42px;
-    }
-
-    &__list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: $footer-gap;
-        font-size: $footer-list-font-size;
-    }
-
-    &__list-item {
-        margin-bottom: $footer-list-item-margin-bottom;
-        display: flex;
-        align-items: center;
-        gap: 22px;
-        @include roboto-font;
-
-        i {
-            margin-right: $footer-list-item-icon-margin-right;
-            font-size: 30.8px;
-        }
-
-        a{
-            color:$footer-text-color;
-            text-decoration: none;
-        }
-    }
-}
-
-/****** Responsive tablet *******/
-/* Media Query pour les tablettes à partir de 768px */
-
-@media screen and (min-width: 768px){
-    .footer {
-
-        &__content {
-            align-items: center;
-        }
-    
-        &__title {
-            font-size:68px;
-            padding-bottom:30px;
-            padding-top: 30px;
-        }
-    
-        &__list {
-            align-items: center;
-            gap:18px;
-            font-size: 46px;
-        }
-    
-        &__list-item {
-            align-items: center;
-            gap: 22px;
-            flex-direction: row-reverse;
-
-            a{
-        
-                text-decoration: underline;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 7px;
+            a {
+                display: flex;
+                flex-direction: row;
+                color: #fff;
+                gap: 15px;
+                text-decoration: none;
+                &:hover {
+                    color: var(--secondary-color);
+                }
             }
-        }
-    }
-}
-
-
-
-/****** Responsive desktop *******/
-// Media query pour desktop (minimum 1024px)
-
-@media (min-width:1024px) {
-
-    .footer{
-        margin: 0;
-        display: flex;
-        padding: 30px 25px;
-        justify-content: flex-end;
-        align-items: flex-end;
-        gap: 16px;
-
-        &__content {
-            display: flex;
-            flex-direction: row-reverse;
-            gap:40px;
-        }
-
-        &__title{
-           padding: 14px;
-           font-size: 30px;
-        }
-
-        &__list {
-            display: flex;
-            flex-direction: row;
-            font-size: 20px;
-            gap: 30px;
-            padding-top: 20px;
-        }
-
-        &__list-item{
-            gap:0px;
-            align-items: flex-start;
-            flex-direction: row;
-        }   
-    
-        i {
-            font-size: 20px;
-        }
-
-        a{
-            color:$footer-text-color;
-            text-decoration: none;
         }
     }
 }
