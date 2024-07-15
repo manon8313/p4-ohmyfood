@@ -1,7 +1,6 @@
-.main {
+.restaurant-page .main {
     display: flex;
     justify-content: center;
-    padding: 20px;
     font-family: roboto;
     
     .card {
@@ -39,7 +38,13 @@
                 }
 
                 &-item {
-                    margin-bottom: 10px;
+                    border-radius: 15.043px;
+                    background: var(--White, #FFF);
+                    box-shadow: 0px 4.011px 15.043px 0px;
+                    display: flex;
+                    width: 349px;
+                    height: 69px;
+                    align-items: center;
 
                     &__item-name {
                         overflow: hidden;
