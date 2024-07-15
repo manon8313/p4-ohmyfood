@@ -1,16 +1,29 @@
-@import "./base/normalize";
-@import "./layouts/header";
-@import "./pages/home";
-@import "./layouts/footer";
-@import "./base/variables";
-@import "./components/heart";
-@import "./components/badge";
-@import "./components/button";
-@import "./layouts/restaurant-hearder";
-@import "./pages/restaurant-home";
-@import "./layouts/aside";
+// Base 
 @import "./base/animation";
+@import "./base/normalize";
+@import "./base/typography";
+
+// Components
+@import "./components/button";
 @import "./components/card";
+@import "./components/heart";
+
+// Layouts  
+@import "./layouts/aside";
+@import "./layouts/footer";
+@import "./layouts/header";
+
+// Pages 
+@import "./pages/home";
+@import "./pages/restaurant";
+
+// Utils 
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+
+@import "./css/style.css";
 
 
 
