@@ -30,3 +30,39 @@ footer {
         }
     }
 }
+
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 16px;
+        padding: 30px 25px;
+        h2 {
+            order: 2;
+            display: flex;
+            padding: 0;
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0;
+            gap: 7px;
+            ul {
+                order: 1;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 7px;
+            }
+        }
+    }
+}
+.space {
+    margin-left: 30px;
+}
