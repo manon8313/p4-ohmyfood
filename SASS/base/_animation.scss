@@ -1,0 +1,57 @@
+@keyframes appear {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  #entree {
+    opacity: 0%;
+    animation: appear 0.5s none 0.75s;
+    animation-fill-mode: forwards;
+  }
+  #plat {
+    opacity: 0%;
+    animation: appear 0.75s none 1.5s;
+    animation-fill-mode: forwards;
+  }
+  #dessert {
+    opacity: 0%;
+    animation: appear 0.75s none 2.25s;
+    animation-fill-mode: forwards;
+  }
+
+  .loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    animation: disappear 2s forwards 2s;
+    background: linear-gradient(#FF79DA, #9356dc);
+    p {
+      font-family: 'Shrikhand';
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+  
+  
+  @keyframes disappear {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+  

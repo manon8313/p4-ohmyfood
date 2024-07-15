@@ -1,10 +1,9 @@
-/* Error: Undefined variable.
- *    ,
- * 75 |     background: $bg-color-lighter;
- *    |                 ^^^^^^^^^^^^^^^^^
- *    '
- *   SASS\pages\_home.scss 75:17  @import
- *   SASS\main.scss 3:9           root stylesheet */
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 5 | @import "./base/variables";
+ *   |         ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   SASS\main.scss 5:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 75 \2502      background: $bg-color-lighter;\d\a    \2502                  ^^^^^^^^^^^^^^^^^\a    \2575 \a   SASS\\pages\\_home.scss 75:17  @import\a   SASS\\main.scss 3:9           root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"./base/variables\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^\a   \2575 \a   SASS\\main.scss 5:9  root stylesheet";
 }
