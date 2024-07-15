@@ -1,0 +1,64 @@
+#restaurant {
+    background-color: var(--main-color);
+    padding-bottom: 65px;
+  }
+  #restaurant h2 {
+    width: 90%;
+    margin: auto;
+  }
+  #restaurant div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+  }
+  #restaurant div .restaurant {
+    width: 100%;
+    min-width: 275px;
+    max-width: 325px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+  }
+  #restaurant div .restaurant a {
+    text-decoration: none;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Nouveau*/
+  }
+  #restaurant div .restaurant a img {
+    object-fit: cover;
+    width: 100%;
+    height: 189.56px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #restaurant div .restaurant a .center-image {
+    object-position: left 60%;
+  }
+  #restaurant div .restaurant a span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 7px 12px 4px;
+    border-radius: 2px;
+    background-color: var(--tertiary-color);
+    color: green;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #restaurant div .restaurant a h3 {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  #restaurant div .restaurant a p {
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+  #restaurant div .restaurant .fa-heart {
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+  }/*# sourceMappingURL=resto.css.map */

@@ -1,0 +1,32 @@
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding-bottom: 20px;
+
+    h2 {
+        font-family: 'Shrikhand';
+        padding: 22px 25px;
+        font-weight: 100;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 7px;
+            a {
+                display: flex;
+                flex-direction: row;
+                color: #fff;
+                gap: 15px;
+                text-decoration: none;
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}

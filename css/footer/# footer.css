@@ -1,0 +1,31 @@
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  footer h2 {
+    font-family: "Shrikhand";
+    padding: 22px 25px;
+    font-weight: 100;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer div ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 7px;
+  }
+  footer div ul a {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    gap: 15px;
+    text-decoration: none;
+  }
+  footer div ul a:hover {
+    color: var(--secondary-color);
+  }/*# sourceMappingURL=footer.css.map */
