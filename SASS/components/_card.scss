@@ -1,0 +1,98 @@
+#restaurant {
+    background-color: var(--main-color);
+    padding-bottom: 65px;
+    h2 {
+        width: 90%;
+        margin: auto;
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+        .restaurant {
+            width: 98%;
+            border-radius: 15px;
+            background-color: white;
+            position: relative;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.05);
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 189.56px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+            
+                }  
+                .center-image {
+                    object-position: left 60%;
+                }
+                /* Nouveau*/
+                span {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    padding: 7px 12px 4px;
+                    border-radius: 2px;
+                    background-color: var(--tertiary-color);
+                    color: green;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                h3 {
+                    padding-left: 15px;
+                    padding-top: 10px;
+                }  
+                p {
+                    padding-left: 15px;
+                    padding-bottom: 10px;
+                }
+            }
+            .fa-heart {
+                position: absolute;
+                right: 20px;
+                bottom: 35px;
+            }
+        }
+    }    
+}
+
+/****** Media queries ***********/
+/* Medium devices and desktop (768px) */
+@media (min-width: 768px) {
+    #restaurant {
+        display: flex;
+        padding-left: 180px;
+        padding-right: 180px;
+        gap: 28px;
+        flex-direction: column;
+        h2 {
+            width: 100%;
+        }
+        div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            grid-template-columns: 44% 45%;
+            row-gap: 50px;
+            column-gap: 100px;
+            padding: 0;
+            .restaurant {
+                .fa-heart {
+                    bottom: 20px;
+                }
+            }
+        }
+    }    
+}
