@@ -478,8 +478,8 @@ body {
 @media (min-width: 768px) {
   #restaurant {
     display: flex;
-    padding-right: 24px;
     padding-left: 24px;
+    padding-right: 24px;
     gap: 28px;
     flex-direction: column;
   }
@@ -491,7 +491,7 @@ body {
     justify-content: center;
     justify-items: center;
     width: 100%;
-    grid-template-columns: 61% 61%;
+    grid-template-columns: 44% 45%;
     row-gap: 50px;
     column-gap: 100px;
     padding: 0;
@@ -694,6 +694,9 @@ footer div ul a:hover {
 /****** Media queries ***********/
 /* Medium devices and desktop (768px) */
 @media (min-width: 768px) {
+  .location {
+    box-shadow: none;
+  }
   .intro h1 {
     font-size: 40px;
     line-height: 47px;
@@ -859,4 +862,4 @@ footer div ul a:hover {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

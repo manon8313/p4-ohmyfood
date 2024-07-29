@@ -4,13 +4,12 @@ aside {
     padding: 50px 0px 50px;
     .bloc-guide {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1px;
+      gap: 20px;
       .guide {
         display: flex;
         align-items: center;
-        width: 98%;
+        width: 28%;
         background-color: var(--main-color);
         padding: 25px 0px;
         border-radius: 20px;
