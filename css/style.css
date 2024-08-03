@@ -609,14 +609,18 @@ footer div ul {
   list-style-type: none;
   gap: 7px;
 }
-footer div ul a {
+footer div ul * li {
+  margin: 10px;
+  gap: 25px;
+}
+footer div ul * li a {
   display: flex;
   flex-direction: row;
   color: #fff;
   gap: 15px;
   text-decoration: none;
 }
-footer div ul a:hover {
+footer div ul * li a:hover {
   color: var(--secondary-color);
 }
 
