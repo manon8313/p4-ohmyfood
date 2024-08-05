@@ -16,24 +16,17 @@ footer {
             display: flex;
             flex-direction: column;
             list-style-type: none;
-            gap: 7px;*
-
-            li {
-                margin: 10px;
-                gap:25px;
-
-
-                a {
-                    display: flex;
-                    flex-direction: row;
-                    color: #fff;
-                    gap: 15px;
-                    text-decoration: none;
-                    &:hover {
-                        color: var(--secondary-color);
-                    }
+            gap: 7px;
+            a {
+                display: flex;
+                flex-direction: row;
+                color: #fff;
+                gap: 15px;
+                text-decoration: none;
+                &:hover {
+                    color: var(--secondary-color);
                 }
-            }    
+            }
         }
     }
 }
@@ -70,6 +63,7 @@ footer {
         }
     }
 }
+
 .space {
     margin-left: 30px;
 }
